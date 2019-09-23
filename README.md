@@ -19,7 +19,7 @@ Link the robot model using
 ln -s $PWD/parkour_dummy_demo/pioneer3at ~/.gazebo/models
 ```
 
-Spawn the robot on the start line using `-refence_frame` and `x y z` tags (assuming that `Gazebo` is already running with `parkour_world.sdf`)
+Spawn the robot on the start line using `reference_frame` and `x y z` tags (assuming that `Gazebo` is already running with `parkour_world.sdf`)
 ```
 rosrun gazebo_ros spawn_model -file `rospack find parkour_dummy_demo`/pioneer3at/model.sdf -sdf -model pioneer3at -reference_frame RoboyParkourTrack::mesh_link -x 0.3 -y -2.3 -z 0.5
 ```
@@ -28,3 +28,5 @@ Actuate back wheels
 ```
 rosrun parkour_dummy_demo drive.py
 ```
+
+To reset the the robot to initial position press `Ctrl+R` in Gazebo.
