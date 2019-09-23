@@ -18,7 +18,7 @@
        </inertial>
         <geometry>
           <mesh>
-            <uri>model://RoboyParkourTrack/RoboyParkourChallengeTrack-Simplistic-2019-09-19.stl</uri>
+            <uri>model://RoboyParkourTrack/RoboyParkourChallengeTrack-Simplistic-2019-09-23.stl</uri>
             <scale>0.0001 0.0001 0.0001</scale>
           </mesh>
         </geometry>
@@ -26,7 +26,7 @@
       <collision name='track_collision'>
         <geometry>
           <mesh>
-            <uri>model://RoboyParkourTrack/RoboyParkourChallengeTrack-Simplistic-2019-09-19.stl</uri>
+            <uri>model://RoboyParkourTrack/RoboyParkourChallengeTrack-Simplistic-2019-09-23.stl</uri>
             <scale>0.0001 0.0001 0.0001</scale>
           </mesh>
         </geometry>

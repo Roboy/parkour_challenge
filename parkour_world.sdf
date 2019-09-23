@@ -112,79 +112,19 @@
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
-    <model name='RoboyParkourTrack'>
-      <link name='mesh_link'>
-        <kinematic>1</kinematic>
-        <visual name='track_visual'>
-          <geometry>
-            <mesh>
-              <uri>model://RoboyParkourTrack/RoboyParkourChallengeTrack-Simplistic-2019-09-19.stl</uri>
-              <scale>0.0001 0.0001 0.0001</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <collision name='track_collision'>
-          <geometry>
-            <mesh>
-              <uri>model://RoboyParkourTrack/RoboyParkourChallengeTrack-Simplistic-2019-09-19.stl</uri>
-              <scale>0.0001 0.0001 0.0001</scale>
-            </mesh>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-                <fdir1>0 0 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0.5</restitution_coefficient>
-              <threshold>0</threshold>
-            </bounce>
-            <contact>
-              <ode>
-                <max_vel>100</max_vel>
-                <min_depth>0.0001</min_depth>
-              </ode>
-            </contact>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <self_collide>0</self_collide>
-        <inertial>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-          <mass>1</mass>
-        </inertial>
-        <enable_wind>0</enable_wind>
-      </link>
-      <pose frame=''>-0.675301 0.16219 0 0 -0 0</pose>
-    </model>
     <state world_name='default'>
-      <sim_time>983 230000000</sim_time>
-      <real_time>24 803927648</real_time>
-      <wall_time>1569270252 595756227</wall_time>
-      <iterations>911551</iterations>
+      <sim_time>8636 417000000</sim_time>
+      <real_time>109 902827846</real_time>
+      <wall_time>1569273006 221439831</wall_time>
+      <iterations>7653187</iterations>
       <model name='RoboyParkourTrack'>
-        <pose frame=''>-0.675301 0.16219 0 0 -0 0</pose>
+        <pose frame=''>-8.96284 1.6153 -3.8e-05 -0.004739 -0.000649 2e-06</pose>
         <scale>1 1 1</scale>
         <link name='mesh_link'>
-          <pose frame=''>-0.675301 0.16219 0 0 -0 0</pose>
+          <pose frame=''>-8.96284 1.6153 -3.8e-05 -0.004739 -0.000649 2e-06</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 0 -0 0</acceleration>
-          <wrench>0 0 -9.8 0 -0 0</wrench>
+          <acceleration>0 -0 0 0 -0 0</acceleration>
+          <wrench>0 -0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -203,10 +143,67 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-12.4073 -9.45529 4.56545 0 0.207643 0.861002</pose>
+        <pose frame=''>-15.2247 -12.6409 6.04633 0 0.207643 0.861002</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
+    <model name='RoboyParkourTrack'>
+      <link name='mesh_link'>
+        <visual name='track_visual'>
+          <geometry>
+            <mesh>
+              <uri>model://RoboyParkourTrack/RoboyParkourChallengeTrack-Simplistic-2019-09-23.stl</uri>
+              <scale>0.0001 0.0001 0.0001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='track_collision'>
+          <geometry>
+            <mesh>
+              <uri>model://RoboyParkourTrack/RoboyParkourChallengeTrack-Simplistic-2019-09-23.stl</uri>
+              <scale>0.0001 0.0001 0.0001</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0.05</restitution_coefficient>
+              <threshold>0</threshold>
+            </bounce>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+          <max_contacts>1000</max_contacts>
+        </collision>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-8.96284 1.6153 0 0 -0 0</pose>
+    </model>
   </world>
 </sdf>
