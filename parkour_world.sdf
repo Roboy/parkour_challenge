@@ -150,6 +150,7 @@
     </gui>
     <model name='RoboyParkourTrack'>
       <link name='mesh_link'>
+        <kinematic>1</kinematic>
         <visual name='track_visual'>
           <geometry>
             <mesh>
