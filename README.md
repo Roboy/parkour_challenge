@@ -8,6 +8,6 @@ roscore&
 rosrun gazebo_ros gazebo parkour_world.sdf
 ```
 
-Read more at [www.roboy.org/win](https://roboy.org/win/).
+Learn more at [www.roboy.org/win](https://roboy.org/win/).
 
 ![Gazebo Parkour Track](https://github.com/Roboy/parkour_challenge/blob/master/images/gazebo_track.png "Gazebo Parkour Track")
