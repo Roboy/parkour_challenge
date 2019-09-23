@@ -1,6 +1,6 @@
 # Roboy Parkour Challenge
 
-To use the Roboy Parkout Challenge Track Gazebo world execute the following:
+To use the Roboy Parkour Challenge Track Gazebo world execute the following:
 ```
 cd parkour_challenge
 ln -s $PWD/RoboyParkourTrack ~/.gazebo/models
